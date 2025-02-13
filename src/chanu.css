@@ -1,0 +1,648 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* {
+  font-family: Pretendard, 'Noto Sans KR', sans-serif;
+  /* font-family: "Courier New", Courier, monospace; */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+/* GLOBAL */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.first-level {
+  font-size: 1.5rem;
+  color: blue; /* 원하는 색상 */
+}
+
+.second-level {
+  font-size: 1.2rem;
+  color: green; /* 원하는 색상 */
+}
+
+/* 나머지 스타일 */
+
+.menu {
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu-item {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 430px;
+}
+
+.container-archive {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 560px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 12px;
+}
+
+.product-item span {
+  cursor: pointer;
+}
+
+.photo-container {
+  display: flex;
+  overflow-y: none;
+  overflow-x: auto;
+}
+.photo-container::-webkit-scrollbar {
+  display: none;
+}
+.photo-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.photo {
+  width: 30vw;
+  height: 40vw;
+  max-height: 70vh;
+  object-fit: cover;
+  margin-right: 4px;
+}
+
+/*MOBILE*/
+
+@media (max-width: 768px) {
+  button {
+    font-family: "Courier New", Courier, monospace;
+    background-color: rgb(58, 107, 149);
+    border-width: 1px;
+  }
+
+  .block1:after {
+    clear: both;
+    display: inline;
+    content: "";
+  }
+  .block1 {
+    width: 100%;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .margin1 {
+    font-family: "Courier New", Courier, monospace;
+    display: inline-block;
+    width: fit-content;
+    margin: 0rem auto;
+    margin-right: 0;
+  }
+
+  .block2:after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+  .block2.listframe {
+    margin: 0rem;
+    float: left;
+  }
+
+  .category1 {
+    width: 100%;
+    height: 5%;
+
+    float: left;
+    background-color: white;
+    margin: 3%;
+    margin-bottom: 0.1rem;
+  }
+  .category2 {
+    width: 97%;
+    height: 33%;
+    float: left;
+    margin-bottom: 20rem;
+
+    background-color: white;
+    margin: 3%;
+  }
+  .category2_1 {
+    width: 97%;
+    height: 20%;
+    float: left;
+    margin-bottom: 20rem;
+
+    background-color: white;
+    margin: 3%;
+  }
+  .category3 {
+    width: 10%;
+    height: 10%;
+
+    float: left;
+    background-color: white;
+    margin-block-start: 2rem;
+    margin: 3%;
+    margin-right: 0rem;
+  }
+
+  .category4 {
+    width: 97%;
+    height: fit-content;
+
+    float: left;
+    background-color: white;
+    margin-block-start: 2rem;
+    margin: 3%;
+    margin-right: 0rem;
+  }
+  .category5 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    width: 97%;
+    height: fit-content;
+    float: left;
+    background-color: white;
+    margin-block-start: 2rem;
+    margin: 3%;
+    margin-left: 3%;
+    margin-right: 0rem;
+    align-items: flex-end;
+  }
+
+  .hylink1 {
+    font-family: "Courier New", Courier, monospace;
+    /* font-size: 1rem; */
+    /* width: 30%; */
+    /* margin-right: 2rem; */
+    /* margin-bottom: 1rem; */
+    text-decoration: none !important;
+    color: black !important;
+  }
+
+  .hylink2 {
+    font-family: "Courier New", Courier, monospace;
+    /* font-size: 2.2rem; */
+    /* width: 13%; */
+    /* margin-right: 2rem; */
+    /* margin-bottom: 1rem; */
+    text-decoration: underline !important;
+    color: black !important;
+  }
+
+  .right-menu1 .hylink1,
+  .right-menu2 .hylink1,
+  .right-menu3 .hylink1,
+  .right-menu4 .hylink1,
+  .right-menu1 .hylink2,
+  .right-menu2 .hylink2,
+  .right-menu3 .hylink2,
+  .right-menu4 .hylink2 {
+    margin-right: 2rem;
+    background-color: #ffffff66;
+    z-index: 888;
+  }
+
+  .margin2 {
+    float: left;
+    margin-bottom: 2rem;
+  }
+  .marginPrime {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .marginPrime2 {
+    float: left;
+    margin: 0rem;
+    margin-right: 0px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .marginPrime3 {
+    float: bottom;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .overflow1 {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 60rem;
+    height: fit-content;
+    white-space: nowrap;
+    margin-right: 1rem;
+  }
+
+  .overflow2 {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+  }
+
+  .photoframe {
+    overflow: hidden;
+    float: none;
+    width: 98%;
+    height: auto;
+  }
+  .photoframe2 {
+    overflow: hidden;
+    float: none;
+    width: 98%;
+    height: auto;
+  }
+  .photoframe3 {
+    overflow: hidden;
+    float: none;
+    width: 98%;
+    height: auto;
+  }
+  .photoframe4 {
+    overflow: hidden;
+    float: none;
+    width: 98%;
+    height: auto;
+  }
+  .photoframe_AL {
+    overflow: hidden;
+    float: none;
+    width: 300px;
+    height: 400px;
+  }
+
+  .wrapper {
+    max-width: 1600px;
+    width: 100vw;
+    /* max-height: 100vh; */
+    /* height: 100vh; */
+    margin: 0;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    text-align: right;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    padding-right: 0;
+    padding-top: 200px;
+  }
+
+  .photo-container {
+    display: flex;
+    overflow-y: none;
+    overflow-x: auto;
+  }
+  .photo-container::-webkit-scrollbar {
+    display: none;
+  }
+  .photo-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .photo {
+    width: 60vw;
+    height: 80vw;
+    max-height: 70vh;
+    object-fit: cover;
+    margin-right: 4px;
+  }
+
+  .ngl_description {
+    padding: 0 8px;
+    font-family: "Courier New", Courier, monospace;
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+
+  .small_text_sm {
+    font-size: 0.9rem;
+  }
+
+  .ngl_description.small_text_sm {
+    text-align: right;
+    display: block;
+    padding: 0;
+  }
+}
+
+/*DESKTOP*/
+
+@media (min-width: 768.01px) {
+  input[type="numeric"] {
+    text-align: center;
+    height: 100%;
+    font-family: "Courier New", Courier, monospace;
+    background-color: mintcream;
+    border-width: 1px;
+  }
+
+  button {
+    font-family: "Courier New", Courier, monospace;
+    background-color: aliceblue;
+    border-width: 1px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  body {
+    background-color: white;
+  }
+  .category1 {
+    font-family: "Courier New", Courier, monospace;
+    width: 9.5%;
+    height: fit-content;
+    color: black;
+    float: left;
+    background-color: white;
+    margin: 1rem;
+    margin-right: 0.1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .category2 {
+    width: 24%;
+    height: fit-content;
+    color: black;
+    float: left;
+    background-color: white;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .category2_1 {
+    font-family: "Courier New", Courier, monospace;
+    width: 60%;
+    height: 95%;
+    color: black;
+    float: left;
+    background-color: white;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .category3 {
+    width: 10%;
+    height: fit-content;
+    color: black;
+    float: left;
+    background-color: white;
+    margin: 1rem;
+    margin-right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .category4 {
+    width: 35%;
+    height: 95%;
+    color: black;
+    float: left;
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .category5 {
+    font-family: "Courier New", Courier, monospace;
+    width: fit-content;
+    height: 95%;
+    color: black;
+    float: left;
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: flex-end;
+  }
+
+  .margin1 {
+    float: left;
+    margin-block-end: 2rem;
+  }
+  .margin2 {
+    float: left;
+    margin-bottom: 2rem;
+  }
+  .marginPrime {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+  }
+  .marginPrime2 {
+    float: left;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+  }
+
+  .hylink1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    font-weight: normal;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-decoration: none !important;
+    color: black !important;
+  }
+
+  .hylink2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-decoration: underline !important;
+    color: black !important;
+  }
+
+  .block1 {
+    font-family: "Courier New", Courier, monospace;
+    width: fit-content;
+    height: fit-content;
+    margin: 0rem;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .block2 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0rem;
+    float: left;
+  }
+
+  .listframe {
+    margin: 0rem;
+    float: left;
+  }
+
+  .overflow1 {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 1rem;
+    white-space: nowrap;
+    scrollbar-color: white black;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+  }
+  ::-webkit-scrollbar-button {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+  }
+  ::-webkit-scrollbar-button:start {
+    background-color: black; /* Top, Left 覦��レ�� �企�覯��� */
+  }
+  ::-webkit-scrollbar-button:end {
+    background-color: black; /* Bottom, Right 覦��レ�� �企�覯��� */
+  }
+  ::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(240deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(0deg, black 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: white;
+  }
+
+  ::-webkit-scrollbar-button:vertical:end:increment {
+    background: linear-gradient(300deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(60deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(180deg, black 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: white;
+  }
+
+  ::-webkit-scrollbar-button:horizontal:end:increment {
+    background: linear-gradient(210deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(330deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(90deg, black 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: white;
+  }
+
+  ::-webkit-scrollbar-button:horizontal:start:decrement {
+    background: linear-gradient(30deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(150deg, black 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(270deg, black 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: white;
+  }
+
+  .overflow2 {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+  }
+
+  .photoframe {
+    overflow: hidden;
+    float: none;
+    width: 50%;
+    height: auto;
+    align-content: flex-end;
+  }
+  .photoframe2 {
+    overflow: hidden;
+    float: none;
+    width: 98%;
+    height: auto;
+  }
+  .photoframe3 {
+    overflow: hidden;
+    float: none;
+    width: 98%;
+    height: auto;
+  }
+  .photoframe4 {
+    overflow: hidden;
+    float: none;
+    width: 98%;
+    height: auto;
+  }
+  .photoframe_AL {
+    overflow: hidden;
+    float: none;
+    width: 300px;
+    height: 400px;
+  }
+
+  .wrapper {
+    max-width: 1600px;
+    max-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding-right: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: right;
+  }
+
+  .ngl_description {
+    font-family: "Courier New", Courier, monospace;
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+
